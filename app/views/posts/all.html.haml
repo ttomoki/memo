@@ -1,0 +1,17 @@
+.wrapper
+  =render 'posts/header'
+  .content
+    .posts_all
+      - @posts.each do |post|
+        .posts
+          .show_question
+            = post.question
+          - if post.question_image.present?
+            .show_image
+              = image_tag post.question_image
+          - if post.answer.present?
+            .show_answer
+              = post.answer
+          - if post.link_url.present?
+            .show_link
+              = link_to '参考サイト', post.link_url, target: "_blank"

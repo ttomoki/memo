@@ -1,0 +1,60 @@
+form{
+  padding-top: 60px;
+}
+.post_form_field {
+  width: 980px;
+  margin: 0px 180px;
+  padding: 40px;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+    .post_form_field_left {
+      float: left;
+      width: 30%;
+      padding-right: 20px;
+      padding-left: 20px;
+      box-sizing: border-box;
+    }
+
+    .post_form_field_right {
+      float: right;
+      width: 70%;
+    }
+
+    .study_group_form_field_left_label {
+      display: block;
+      line-height: 50px;
+      font-weight: bold;
+      text-align: right;
+      color: #fff;
+    }
+
+    .chat-group-form__input {
+      float: left;
+      width: 100%;
+      line-height: 30px;
+      padding: 10px 15px;
+      box-sizing: border-box;
+    }
+
+
+    .file_upload{
+      border: 3px solid;
+      border-color: black;
+      display: inline-block;
+      padding: 2px 1em;
+      background-color: black;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .post_form_action-btn{
+      display: inline-block;
+      padding: 20px 28px;
+      margin-top: 50px;
+      font-size: 16px;
+      color: #fff;
+      background-color: black;
+      border: 0;
+    }
+}

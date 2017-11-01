@@ -1,0 +1,9 @@
+.memo
+  .question
+    = link_to post_path(post.id), method: :get do
+      %button{type: "button"}
+        %h2
+          = post.question
+  - if post.question_image.present?
+    .image
+      = image_tag post.question_image

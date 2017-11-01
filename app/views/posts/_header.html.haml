@@ -1,0 +1,18 @@
+%header
+  %img{src:"../assets/cooltext261419304830316.png"}
+  %ul.menu
+    %li.menu_button.home
+      =link_to root_path do
+        %button{:type => "button"}
+          %h3
+            HOME
+    %li.menu_button.memory
+      =link_to all_posts_path do
+        %button{:type => "button"}
+          %h3
+            MEMORY
+    %li.menu_button
+      =link_to new_post_path do
+        %button{:type => "button"}
+          %h3
+            POST

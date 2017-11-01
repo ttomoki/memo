@@ -48,15 +48,22 @@ body{
         padding-left: 100px;
         height: 200px;
         padding-bottom: 150px;
-
-        h2{
-          color: #eee;
+        .question{
+          float: left;
+        }
+        button{
+          background:none;
+          border: 0;
+          h2{
+            color: #eee;
+            font-size: 24px;
+          }
         }
         .image{
-        	padding-bottom: 150px;
+          clear: left;
           img{
             width: 400px;
-            height: 150px;
+            height: 200px;
           }
         }
       }

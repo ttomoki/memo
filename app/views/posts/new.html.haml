@@ -1,0 +1,33 @@
+.wrapper
+  =render 'posts/header'
+  .content
+    = form_for (@post) do |f|
+      .post_form_field
+        .post_form_field_left
+          .post_form_label
+            = f.label :"Error or Question", class: "study_group_form_field_left_label"
+        .post_form_field_right
+          = f.text_field :'question',class: "chat-group-form__input"
+      .post_form_field
+        .post_form_field_left
+          .post_form_label
+            = f.label :"Image", class: "study_group_form_field_left_label"
+        .post_form_field_right
+          = f.label :question_image, class: "file_upload" do
+            Image Upload
+          = f.file_field :question_image, type: 'file',class: "image_file",style: "display:none";
+      .post_form_field
+        .post_form_field_left
+          .post_form_label
+            = f.label :"Answer", class: "study_group_form_field_left_label"
+        .post_form_field_right
+          = f.text_field :'answer',class: "chat-group-form__input"
+      .post_form_field
+        .post_form_field_left
+          .post_form_label
+            = f.label :"Link Url", class: "study_group_form_field_left_label"
+        .post_form_field_right
+          = f.text_field :'link_url',class: "chat-group-form__input"
+      .post_form_field
+        .post_form_field_right
+          = f.submit "POST", class:"post_form_action-btn"
