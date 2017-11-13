@@ -4,9 +4,13 @@
   font-weight: bold;
   padding-bottom: 30px;
 }
-.show_image{
+.show_all{
 	height: 500px;
-	width: 700px;
+	width: 100%;
+}
+.show_image{
+	height: 100%;
+	width: 50%;
 	float: left;
 	img{
 		height: 100%;
@@ -14,14 +18,20 @@
 	}
 }
 .show_answer{
+	float: left;
 	background-color: #302929;
-	padding-top: 30px;
-	padding-bottom: 50px;
-	padding-left: 730px;
-	color:#eee;
-	font-size: 36px;
+	overflow: scroll;
+	height: 100%;
+	width: 50%;
+	.show_answer_text{
+		padding-top: 20px;
+		padding-left: 30px;
+		color:#eee;
+	    font-size: 36px;
+	}
 }
 .show_link{
+	padding-left: 30px;
 	padding-top: 50px;
     font-family: 'Avenir','Arial';/*フォントをいい感じに*/
 	font-size: 30px;

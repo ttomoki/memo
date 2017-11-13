@@ -6,12 +6,15 @@
         .posts
           .show_question
             = post.question
-          - if post.question_image.present?
+          .show_all
             .show_image
-              = image_tag post.question_image
-          - if post.answer.present?
+              - if post.question_image.present?
+                = image_tag post.question_image
             .show_answer
-              = post.answer
-          - if post.link_url.present?
-            .show_link
-              = link_to '参考サイト', post.link_url, target: "_blank"
+              - if post.answer.present?
+                .show_answer_text
+                  = post.answer
+              - if post.link_url.present?
+                .show_link
+                  = link_to '参考サイト', post.link_url, target: "_blank"
+
